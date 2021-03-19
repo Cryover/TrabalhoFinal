@@ -1,79 +1,575 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="home">
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
+	<link rel="icon" href="img/logo.png" type="image/x-icon">
 	<title>Brigaderia Fina</title>
+	<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
+	<nav class="topnav" id="myTopnav">
+		<ul>
+			<li><a href="#home">Página Inicial</a></li>
+			<li><a href="#quemsomos">Quem somos</a></li>
+			<li><a href="#cardapio">Cardápio</a></li>
+			<li><a href="#servicos">Serviços</a></li>
+			<li><a href="#fotos_eventos">Fotos de Eventos</a></li>
+			<li><a href="#tipos_eventos">Tipos de Eventos</a></li>
+			<li><a href="#depoimentos">Depoimentos</a></li>
+			<li><a href="#receitas">Receitas</a></li>
+			<li><a href="#contato">Contato</a></li>
+		</ul>
+	</nav>
 	<div id="container">
-		<header><p>Header</p></header>
-
-		<nav>
-			<ul>
-				<li><img src="img/logo.png"></li>
-				<li><a href="#home">Página Inicial</li>
-				<li><a href="#quemsomos">Quem somos</li>
-				<li><a href="#produtos">Produtos</a></li>
-				<li><a href="#servicos">Serviços</a></li>
-				<li><a href="#eventos">Eventos Realizados</a></li>
-				<li><a href="#depoimentos">Depoimentos</a></li>
-				<li><a href="#receitas">Receitas</a></li>
-				<li><a href="#contato">Contato</a></li>
-				<li><input type="search" placeholder="Pesquisar"></li>
-			</ul>
-		</nav>
-
 		<main>
-			<section>
-				<ul class="slider">
-					<li>
-						<input type="radio" id="slide1" name="slide" checked>
-						<label for="slide1"></label>
-						<img src="img/banner.jpg" />
-					</li>
-					<li>
-						<input type="radio" id="slide2" name="slide">
-						<label for="slide2"></label>
-						<img src="img/banner.jpg" />
-					</li>
-					<li>
-						<input type="radio" id="slide3" name="slide">
-						<label for="slide3"></label>
-						<img src="img/banner.jpg" />
-					</li>
+			<!-- INICIO DA SEÇÃO CAROUSEL -->
+			<section id="slider">
+				<h2 class="centralizar_texto">Brigaderia Fina</h2>
+				<div class="slideshow-container">
+					<div class="mySlides fade"> <img src="img/banner2.jpg" class="imagem_slider" alt="banner"></div>
+					<div class="mySlides fade"> <img src="img/doces.jpg" class="imagem_slider" alt="doces"></div>
+					<div class="mySlides fade"> <img src="img/doces1.jpg" class="imagem_slider" alt="doces1"></div>
+					<div class="mySlides fade"> <img src="img/doces2.jpg" class="imagem_slider" alt="doces2"></div>
+					<div class="mySlides fade"> <img src="img/doces3.jpg" class="imagem_slider" alt="doces3"></div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+				</div>
+				<div class="centralizar_texto"> 
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</section>
+			<hr>
+			<!-- INICIO DA SEÇÃO QUEM SOMOS-->
+			<section id="quemsomos">
+				<h2>Quem somos</h2>
+
+				<figure>
+					<img src="img/fotop.jpg" class="image_round" alt="Foto da Dona">
+					<figcaption>Susana Barros da Silva, Proprietária da Brigaderia Fina</figcaption>
+				</figure>
+				<h3>Nossa História</h3>
+				<p class="justify">Criada em 2013, a Brigaderia Fina tem se tornado referência em doces finos para festas.
+					Sua idealizadora, a chef confeiteira Susana Barros vem buscando nos últimos anos qualificação, melhores práticas, além do atendimento cuidadoso, carinhoso e personalizado.
+					Atendendendo eventos especiais como casamentos, formaturas e aniversários, a empresa conta com produtos de extremo bom gosto e excelente paladar. Também oferece serviços que aliam beleza e praticidade na realização de projetos e eventos.
+					Solicite um orçamento e confie o seu sonho a uma empresa que possui responsabilidade e excelência no que faz.
+				</p>
+				<h3 class="bold">Nossa missão</h3>
+				<p>“Oferecer às pessoas produtos de qualidade, que garantam sua satisfação, agregando sabor e valor às suas vidas, trazendo à lembrança as coisas que são realmente importantes.”</p>
+				<h3 class="bold">Nossa visão</h3>
+				<p>“Ser referência em doces para eventos na cidade de Porto Alegre. Ser exemplo em condutas e processos. Ser inspiração para o resgate de valores, construindo pontes entre as pessoas.”</p>
+				<h3 class="bold">Nossos valores</h3>
+				<p>A Brigaderia Fina, privilegiando as atividades éticas fundamentais, se alicerça em três fundamentos básicos:</p>
+				<ul>
+					<li>Autenticidade: Optar pelo que é único é escolher um caminho para o sucesso.</li>
+					<li>Qualidade: A razão da nossa credibilidade.</li>
+					<li>Humildade: Crescer sem perder a essência.</li>
 				</ul>
 			</section>
-			<section>
-				<article><h2>teste</h2></article>
+			<!-- INICIO DA SEÇÃO PRODUTOS-->
+			<hr>
+			<section id="cardapio">
+				<h2>Cardápio de Doces</h2>
+				<div>
+					<figure>
+						<img src="img/tradicionais.jpg" title="Doces Tradicionais" alt="Doces Tradicionais">
+						<figcaption>Doces Tradicionais</figcaption>
+					</figure>
+					<table>
+						<thead>
+							<tr>
+								<th>Doces</th>
+								<th>Valor(Unidade)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Branquinho com açúcar</td>
+								<td>R$ 1,60</td>
+							</tr>
+							<tr>
+								<td>Branquinho com coco</td>
+								<td>R$ 1,75</td>
+							</tr>
+							<tr>
+								<td>Negrinho</td>
+								<td>R$ 1,50</td>
+							</tr>
+							<tr>
+								<td>Castanha</td>
+								<td>R$ 1,95</td>
+							</tr>
+							<tr>
+								<td>Nozes</td>
+								<td>R$ 1,80</td>
+							</tr>
+							<tr>
+								<td>Amendoim</td>
+								<td>R$ 1,70</td>
+							</tr>
+							<tr>
+								<td>Olho de Sogra</td>
+								<td>R$ 1,75</td>
+							</tr>
+							<tr>
+								<td>Mescladinho</td>
+								<td>R$ 1,60</td>
+							</tr>
+							<tr>
+								<td>Chocobol Branco</td>
+								<td>R$ 1,90</td>
+							</tr>
+							<tr>
+								<td>Chocobol Preto</td>
+								<td>R$ 1,90</td>
+							</tr>
+						</tbody>
+					</table> 
+				</div>
+				<div>
+					<figure>
+						<img src="img/glaceados.jpg" title="Doces Glaceados" alt="Doces Glaceados">
+						<figcaption>Doces Glaceados</figcaption>
+					</figure>
+					<table>
+						<tr>
+							<th>Doces</th>
+							<th>Valor(Unidade)</th>
+						</tr>
+						<tr>
+							<td>Mãe Benta</td>
+							<td>R$ 2,00</td>
+						</tr>
+						<tr>
+							<td>Amendoim</td>
+							<td>R$ 2,25</td>
+						</tr>
+						<tr>
+							<td>Branquinho com Coco</td>
+							<td>R$ 2,25</td>
+						</tr>
+						<tr>
+							<td>Nozes</td>
+							<td>R$ 2,40</td>
+						</tr>
+						<tr>
+							<td>Castanha</td>
+							<td>R$ 2,60</td>
+						</tr>
+						<tr>
+							<td>Gema e Açúcar</td>
+							<td>R$ 2,20</td>
+						</tr>
+					</table> 
+				</div>
+				<div>
+					<figure>
+						<img src="img/caramelados.jpg" title="Doces Caramelados" alt="Doces Caramelados">
+						<figcaption>Doces Caramelados</figcaption>
+					</figure>
+					<table>
+						<tr>
+							<th>Doces</th>
+							<th>Valor(Unidade)</th>
+						</tr>
+						<tr>
+							<td>Branquinho com Coco</td>
+							<td>R$ 2,15</td>
+						</tr>
+						<tr>
+							<td>Amendoim</td>
+							<td>R$ 2,10</td>
+						</tr>
+						<tr>
+							<td>Castanha</td>
+							<td>R$ 2,20</td>
+						</tr>
+						<tr>
+							<td>Nozes</td>
+							<td>R$ 2,40</td>
+						</tr>
+						<tr>
+							<td>Negrinho</td>
+							<td>R$ 2,10</td>
+						</tr>
+						<tr>
+							<td>Branquinho</td>
+							<td>R$ 2,10</td>
+						</tr>
+						<tr>
+							<td>Olho de Sogra</td>
+							<td>R$ 2,30</td>
+						</tr>
+					</table> 
+				</div>
+			</section>
+			<!-- INICIO DA SEÇÃO SERVICOS-->
+			<hr>
+			<section id="servicos">
+				<h2>Serviços</h2>
+				<article>
+					<ion-icon name="sync-outline" class="icone_rotacao"></ion-icon>
+					<p>Aluguel de suportes e complementos para doces</p>
+				</article>
+				<article>
+					<ion-icon name="color-palette-outline" class="icone_scale"></ion-icon>
+					<p>Personalização</p>
+				</article>
+				<article>
+					<ion-icon name="car-outline" class="icone_shake"></ion-icon>
+					<p>Transporte de produtos</p>
+				</article>
+				<article>
+					<ion-icon name="albums-outline" class="icone_scale"></ion-icon>
+					<p>Montagem e decoração de mesa de doces</p>
+				</article>
+				<article>	
+					<ion-icon name="restaurant-outline" class="icone_scale"></ion-icon>
+					<p>Degustação de doces</p>
+				</article>
+				<article>
+					<ion-icon name="bulb-outline" class="icone_scale"></ion-icon>
+					<p>Consultoria</p>
+				</article>
+			</section>
+			<hr>
+			<!-- INICIO DA SEÇÃO FOTOS DE EVENTOS REALIZADOS-->
+			<section id="fotos_eventos">
+				<h2>Fotos de Eventos</h2>
+				<figure class="zoom">
+					<img src="img/formatura2.jpg" title="formatura" alt="Formatura">
+					<figcaption>Formaturas</figcaption>
+				</figure>
+				<figure class="zoom">
+					<img src="img/quinzeanos.jpg" title="quinzeanos" alt="quinzeanos">
+					<figcaption>Festa de 15 Anos</figcaption>
+				</figure>
+				<figure class="zoom">
+					<img src="img/eventocasamento.jpg" title="casamento" alt="casamento">
+					<figcaption>Casamentos</figcaption>
+				</figure>
+				<figure class="zoom">
+					<img src="img/aniversario.jpg" title="aniversario" alt="aniversario">
+					<figcaption>Aniversários</figcaption>
+				</figure>
+				<figure class="zoom">
+					<img src="img/recepcao.jpg" title="recepcao" alt="recepcao">
+					<figcaption>Inaugurações de Lojas</figcaption>
+				</figure>
+				<figure class="zoom">
+					<img src="img/coffebreak.jpg" title="coffebreak" alt="coffebreak">
+					<figcaption>Coffe Break</figcaption>
+				</figure>
+			</section>
+			<hr>				
+			<section id="tipos_eventos">
+				<h2>Tipos de Eventos</h2>
+				<div>
+					<ion-icon name="school-outline"></ion-icon>
+					<h4>Formatura</h4>
+					<p class="justify">Para comemorar o alcance desse maravilhoso objetivo sugerimos nossa linha de doces exóticos. Além dos tradicionais brigadeiros, sugerimos também doces finos com um toque de champanhe, licores e vinhos. Todos esses estão arrasando e ganhando elogios nas festas de formatura.</p>
+				</div>
+				<div>
+					<ion-icon name="heart-outline"></ion-icon>
+					<h4>Casamento</h4>
+					<p class="justify">Nesse momento mais que especial a Brigaderia Fina oferece aos noivos um cardápio variado de doces finos. Destacam-se os macarons, doces glaceados e doces tipo Pelotas por sem dúvida alguma agradarem a todos os paladares. Para encerrar a festa em grande estilo indicamos os bem-casados como forma de lembrança, com os quais os 
+					</p>
+				</div>
+				<div>
+					<ion-icon name="gift-outline"></ion-icon>
+					<h4>Aniversário</h4>
+					<p class="justify">Para os aniversários a empresa indica e aposta nos tradicionais brigadeiros em suas diferentes composições. Brigadeiro ao leite, brigadeiro com lascas de chocolate branco e brigadeiro de pistache não podem faltar . Solicite também nosso cardápio de bolos para a festa ficar completa!</p>
+				</div>
+				<div>
+					<ion-icon name="cafe-outline"></ion-icon>
+					<h4>Coffe-Break</h4>
+					<p class="justify">Nada melhor que fazer uma pausa na reunião ou evento em grande estilo. Oferecemos uma linha completa de doces que combinam perfeitamente com eventos corporativos. Petit four, camafeus, nossa linha gourmet são os mais recomendados. Vale conferir!</p>		
+				</div>
+				<div>		
+					<ion-icon name="storefront-outline"></ion-icon>	
+					<h4>Inauguração de Lojas</h4>
+					<p class="justify">Faça da sua inauguração um momento de energias positivas acompanhado das mais belas doçuras. Docinhos servidos em taças tornarão o seu evento elegante e aconchegante. Os sabores que combinam mousses de frutas, mousse napolitano e papaya com cassis sempre fazem sucesso. É a receita de convidados satisfeitos e clientes felizes!</p>
+				</div>
+				<div>	
+					<ion-icon name="wine-outline"></ion-icon>	
+					<h4>Outros</h4>
+					<p class="justify">Apesar de termos forte atuação em eventos tradicionais, a Brigaderia Fina vem se aperfeiçoando através de treinamento da sua equipe para atender os </p>
+				</div>
 			</section>
 
+			<!-- INICIO DA SEÇÃO DEPOIMENTOS-->
+			<hr>
+			<section id="depoimentos">
+				<h2>Depoimentos</h2>
+				<div>
+					<figure>
+						<img src="img/cliente1.jpg" title="Giulia Erbert Ramires" alt="Giulia Erbert Ramires">
+						<figcaption>Giulia Erbert Ramires</figcaption>
+					</figure>
+					<p class="justify">“A Brigaderia Fina fez recentemente o casamento do meu filho Gustavo e da Roberta, em Arraial D'Ajuda. Ficamos encantados com o profissionalismo, bom gosto e a delícia de todos os doces. Eu recomendo a Brigaderia Fina como a melhor de Porto Alegre. Agradeço à equipe e à sua proprietária por tornarem o momento mais importante da vida de meu filho, o mais lindo e saboroso.”</p>
+				</div>
+				<div>
+					<figure>
+						<img src="img/cliente2.jpg" title="Jeferson Sá Passos" alt="Jeferson Sá Passos">
+						<figcaption>Jeferson Sá Passos</figcaption>
+					</figure>
+					<p class="justify">“Olá Susana, tudo bem? Escrevo para dizer que o cupcake foi um sucesso no aniversário. Muita gente me mandou mensagem elogiando, perguntando como descobri e dizendo que estava delicioso. Teve gente que entrou na internet para ver onde encontrava para comprar mais. Realmente vocês estão de Parabéns! Foi tudo perfeito. Quando tiver as fotos mando para vocês! Obrigada por tudo. Abraço.”</p>
+				</div>
+				<div>
+					<figure>
+						<img src="img/cliente3.jpg" title="Elisandro de Araújo Bronizaki" alt="Elisandro de Araújo Bronizaki">
+						<figcaption>Elisandro de Araújo Bronizaki</figcaption>
+					</figure>
+					<p class="justify">“Susana... Queria agradecer muito vocês por terem acreditado no evento e pela presença. A mesa estava lindíssima e mais que isso, deliciosa! Todos os convidados estavam elogiando o trabalho de vocês (e olha minha esposa esteve presente no final do evento e ela é muito critica, mas, só fez elogios dos doces da Brigaderia Fina). Mais uma vez, muito obrigado! Meu abraço.”</p>
+				</div>
+				<div>
+					<figure>
+						<img src="img/cliente4.jpg" title="Daiane Cechinatto de Sousa" alt="Daiane Cechinatto de Sousa">
+						<figcaption>Daiane Cechinatto de Sousa</figcaption>
+					</figure>
+					<p class="justify">“Susana, boa noite. Ia te escrever esse fim de semana para dizer que foi tudo perfeito na formatura e que todos ficaram absolutamente ENCANTADOS com os doces!!! Além de estarem deliciosos, claro! Assim que tiver fotos deles na festa eu te mando. Com certeza continuaremos em contato, pois a qualidade dos doces é incomparável!!! Sem contar o carinho com que somos recebidos por vocês!!! Muito obrigada por tudo. Beijos.”</p>
+				</div>
+				<div>
+					<figure>
+						<img src="img/cliente5.jpg" title="Deborah Maria Anttuarte" alt="Deborah Maria Anttuarte">
+						<figcaption>Deborah Maria Anttuarte</figcaption>
+					</figure>
+					<p class="justify">“Susana eles chegaram intactos e lindos. Além das pessoas delirarem com a beleza deles, deliraram mais ainda com o sabor, foi um close enorme!!! Achei que fossem muitos, sabem quantos sobraram? Nenhum! Fiquei arrasada porque eu só comi um de pistache. hahahahaha. Vocês estão de Parabéns! Beijos.”</p>
+				</div>	
+				<div>
+					<figure>
+						<img src="img/cliente6.jpg" title="Jonatan Goulart Maciel" alt="Jonatan Goulart Maciel">
+						<figcaption>Jonatan Goulart Maciel</figcaption>	
+					</figure> 
+					<p class="justify">“Estou escrevendo apenas para parabenizá-la pelos doces do batizado do dia 1º de dezembro. Os convidados adoraram os doces e o Lacecake foi o maior sucesso!!! Não sobrou nenhum… Obrigado.”</p>
+				</div>
 
+				<form name="formulario_depoimento" id="formulario_depoimento" action="php/recebe_envio_depoimento.php" method="POST">
+					<fieldset>
+						<legend>Deixe seu Depoimento</legend>
+						
+						<label for="nome_depoimento">Nome:</label>
+						<input type="text" id="nome_depoimento" name="nome_depoimento" placeholder="Digite o seu nome" required>
+						
+
+						<label for="email_depoimento">E-mail:</label>
+						<input type="email" id="email_depoimento" name="email_depoimento" placeholder="Digite o seu e-mail" required>
+
+						
+						<label for="telefone_depoitomento">Telefone:</label>
+						<input type="tel" id="telefone_depoitomento" name="telefone_depoitomento" placeholder="Digite o seu telefone" required>
+						
+						<span>Tipo de Evento:</span>
+						<input type="radio" id="casamento" name="tipoeventos" value="Casamento">
+						<label for="casamento">Casamento</label>
+						
+						
+						<input type="radio" id="formatura" name="tipoeventos" value="Formatura">
+						<label for="formatura">Formatura</label>
+						
+						
+						<input type="radio" id="aniversario" name="tipoeventos" value="Aniversario">
+						<label for="aniversario">Aniversário</label>
+						
+						
+						<input type="radio" id="outro" name="tipoeventos" value="Outro" checked>
+						<label for="outro">Outro</label> 
+
+
+						<label class="label_mensagem" for="descricao_depoimento">Mensagem:</label>
+						
+
+						<textarea id="descricao_depoimento" name="descricao_depoimento" cols="50" rows="5" maxlength="500" placeholder="Escreva o seu depoimento aqui..." required></textarea>
+
+
+						<input type="submit" name="btnEnviar" value="Enviar">
+					</fieldset> 
+				</form>
+			</section>
+			<!-- INICIO DA SEÇÃO RECEITAS-->
+			<hr>
+			<section id="receitas">
+				<h2>Receitas</h2>
+
+				<figure id="imagem_direita">
+					<img src="img/fudge.jpg" title="doce fudge" alt="doce fudge"/>
+				</figure>
+				<article>
+					<h3>Fudge Gourmet</h3>
+					<h4>Ingredientes:</h4>
+					<ul>
+						<li><p>1 lata de leite condensado</p></li>
+						<li><p>500 g de chocolate meio amargo</p></li>
+						<li><p>70 g de nozes (ou pistache, avelãs, amêndoas, etc)</p></li>
+						<li><p>50 g de marshmallow branco (se não for mini cortar em pedaços pequenos)</p></li>
+					</ul>
+					<h4>Modo de Preparo:</h4>
+					<ol>
+						<li><p>Derreta cuidadosamente o chocolate no microondas(mexa a cada 30 segundos)</p></li>
+						<li><p>Adicione as nozes e o marshmallow, misturando até ficar homogêneo</p></li>
+						<li><p>Forre uma forma de 20 x 20 cm com papel manteiga ou plástico firme (poli)</p></li>
+						<li><p>Despeje a misture e alise com uma espátula até ficar com a superfície lisa</p></li>
+						<li><p>Leve à geladeira até ficar firme para cortar</p></li>
+						<li><p>Corte em quadradinhos de 3 x 3 cm</p></li>
+						<li><p>Decore ao seu gosto com ganache</p></li>
+					</ol>
+				</article>
+
+
+				<figure id="imagem_esquerda">
+					<img src="img/romeuejulieta.jpg" title="doce romeu e julieta" alt="Doce Romeu e Julieta"/>
+				</figure> 
+				<article>
+					<hr>
+					<h3>Romeu e Julieta</h3>
+					<h4>Ingredientes:</h4>
+					<ul>
+						<li><p>1 lata de leite condensado</p></li>
+						<li><p>60 g de queijo parmesão ralado fino</p></li>
+						<li><p>3 gemas peneiradas</p></li>
+						<li><p>Goiabada para decorar</p></li>
+						<li><p>Cobertura fracionada branca</p></li>
+						<li><p>Pó perolado para decorar</p></li>
+					</ul>
+					<h4>Modo de Preparo:</h4>
+					<ol>
+						<li><p>Leve todos os ingredientes ao fogo, mexendo sempre até a massa secar e atingir o ponto de docinho</p></li>
+						<li><p>Caso prefira também é possível cozinhar a massa no microondas.</p></li>
+						<li><p>Retire e mexa. Volte ao micro por 2 minutos, mexa</p></li>
+						<li><p>Programe mais 1 ou 2 minutos se achar necessário</p></li>
+						<li><p>Transfira a massa para um recipiente e deixe esfriando sobre uma grade</p></li>
+						<li><p>Após esfriar, com as mãos untadas faça as bolinhas</p></li>
+						<li><p>Coloque em uma forma de alumínio e leve à geladeira por pelo menos uma hora</p></li>
+						<li><p>Banhe as bolinhas na cobertura fracionada</p></li>
+						<li><p>colocando os doces sobre papel manteiga ou tapete de silicone</p></li>
+						<li><p>Com o auxílio de uma tesoura retire os excessos que ficaram no doce</p></li>
+						<li><p>Decore com pó perolado</p></li>
+						<li><p>Com o cortador faça pequenos corações como o da foto</p></li>
+						<li><p>Para finalizar coloque um pinguinho de cobertura no doce e "cole" o coração de goiabada</p></li>
+					</ol>
+				</article>
+			</section>
+			<hr>
+			<section id="contato">
+				<h2>Contato</h2>
+				<div>
+					<form name="formulario_contato" id="formulario_contato" action="php/recebe_envio_contato.php" method="POST">
+						<label for="nome_contato">Nome:</label>
+						<input type="text" id="nome_contato" name="nome_contato" placeholder="Digite o seu nome" required>
+
+						<label for="email_contato">E-mail:</label>
+						<input type="email" id="email_contato" name="email_contato" placeholder="Digite o seu e-mail" required>
+
+						<label for="telefone_contato">Telefone:</label>
+						<input type="tel" id="telefone_contato" name="telefone_contato" placeholder="Digite o seu telefone" required>
+
+						<label for="assunto_contato">Assunto:</label>
+						<select name="assunto_contato" id="assunto_contato">
+							<option value="infos">Informações</option>
+							<option value="duvidas" selected>Dúvidas</option>
+							<option value="sugestoes">Sugestões</option>
+						</select>
+
+						<label for="tipo_de_evento">Evento:</label>
+						<select name="tipo_de_evento" id="tipo_de_evento">
+							<option value="casamento">Casamento</option>
+							<option value="aniversario">Aniversário</option>
+							<option value="coffebreak">Coffe-break</option>
+							<option value="formatura">Formatura</option>
+							<option value="quinzeanos">15 Anos</option>
+							<option value="inaugurações">Inaugurações</option>
+							<option value="outros" selected>Outro</option>
+						</select>
+
+						<label class="label_mensagem" for="descricao_contato">Mensagem:</label>
+
+						<textarea id="descricao_contato" name="descricao_contato" cols="50" rows="5" maxlength="500" placeholder="Escreva aqui seu comentário..." required></textarea>
+
+						<input type="submit" name="submit" value="Enviar">
+					</form>
+				</div>
+				<div>
+					<h4>Brigaderia Fina</h4>
+					<p>Rua das Magnólias, Nº 145 - Menino Deus - Porto Alegre/RS</p>
+					<p>Email: <a href="mailto:brigaderiafina@gmail.com">brigaderia.fina.doces@outlook.com</a></p>
+					<nav id="lista_icones">
+						<ul>
+							<li><a href="https://www.facebook.com/brigaderiafina"><ion-icon name="logo-facebook" id="iconeface"></ion-icon></a></li>
+							<li><a href="https://www.instagram.com"><ion-icon name="logo-instagram" id="iconeinstagram"></ion-icon></a></li>
+							<li><a href="https://twitter.com"><ion-icon name="logo-twitter" id="iconetwitter"></ion-icon></a></li>
+							<li><a href="https://www.whatsapp.com"><ion-icon name="logo-whatsapp" id="iconewhats"></ion-icon></a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 		</main>
-
-
-
-
-
-
-
-
-		<footer>
-			<div>
-				<p>Brigaderia Fina</p>
-				<p>Rua das Magnólias, Nº 145 - Menino Deus - Porto Alegre/RS E-mail: brigaderia.fina.doces@outlook.com</p>
-				<p><a href="mailto:brigaderiafina@gmail.com">Brigaderia Fina</a></p>	
-			</div>
-			<div>
-				<a href="https://www.facebook.com/brigaderiafina"><ion-icon name="logo-facebook" id="iconeface"></ion-icon></a>
-				<ion-icon name="logo-instagram" id="iconeinstagram"></ion-icon>
-				<ion-icon name="logo-twitter" id="iconetwitter">teste</ion-icon>
-				<ion-icon name="logo-whatsapp" id="iconewhats"></ion-icon>
-			</div>
-		</footer>
 	</div>
-	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-</body>
-</html>
+	<footer>
+		<p><strong>&#169; COPYRIGHT 2020 - BRIGADERIA FINA.</strong></p>
+		<p>TODOS OS DIREITOS RESERVADOS.</p>
+	</footer>  
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+		var slides,dots;
+
+		function showSlides() {
+			var i;
+			slides = document.getElementsByClassName("mySlides");
+			dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex> slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); // Change image every 8 seconds
+}
+
+function plusSlides(position) {
+	slideIndex +=position;
+	if (slideIndex> slides.length) {slideIndex = 1}
+		else if(slideIndex<1){slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+
+		function currentSlide(index) {
+			if (index> slides.length) {index = 1}
+				else if(index<1){index = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[index-1].style.display = "block";  
+					dots[index-1].className += " active";
+				}
+			</script>
+			<script>
+				function myFunction() {
+					var x = document.getElementById("myTopnav");
+					if (x.className === "topnav") {
+						x.className += " responsive";
+					} else {
+						x.className = "topnav";
+					}
+				}
+			</script>
+		</body>
+		</html>
